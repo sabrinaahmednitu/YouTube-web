@@ -2,9 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
-
 a{
     text-decoration: none;
     color: hsl(0, 0%, 35%);
@@ -150,15 +149,19 @@ width: 16px;
 } */
 
 
-/*_________ banner __________ */
+/*_________ main __________ */
 .container{
-    border: 1px solid red;
     background: #f9f9f9;
     padding-right: 2%;
     padding-left: 17%;
     padding-top: 20px;
     padding-bottom: 20px;
 }
+
+.large-container{
+    padding-left: 7%;
+}
+
 .banner{
     width: 100%;
 }
@@ -191,4 +194,47 @@ width: 16px;
     width: 35px;
  border-radius: 50%;
  margin-right: 10px;
+}
+
+.vid-info{
+    color: #5a5a5a;
+    font-size: 13px;
+    
+}
+.vid-info a{
+    color: #000;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+     
+}
+
+
+@media (max-width:900px){
+    .menu-icon{
+        display: none;
+    }
+    .sidebar{
+        display: none;
+    }
+    .container , .large-container{
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+    .nav-right img{
+        display: none;
+    }
+    .nav-right .user-icon{
+        display: block;
+        width: 30px;
+    }
+    .nav-middle .search-box input{
+      width: 100px;
+    }
+    .nav-middle .mic-icon{
+        display: none;
+    }
+    .logo{
+        width: 90px;
+    }
 }
